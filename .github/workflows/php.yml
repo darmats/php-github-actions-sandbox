@@ -4,8 +4,9 @@ on: [pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+    container:
+      image: darmats/php:7.3-apache-dev
 
     steps:
     - name: PHP Version
