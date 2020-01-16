@@ -1,5 +1,6 @@
 {
     "name": "darmats/php-github-actions-sandbox",
+    "description": "GitHub Actions Sandbox.",
     "license": "MIT",
     "require": {
         "php": "^7.3.6"
