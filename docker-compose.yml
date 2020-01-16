@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    image: darmats/php:7.3-apache-dev
+    volumes:
+      - ${PWD}:/src
+    working_dir: /src
+    environment:
+      APACHE_DOCUMENT_ROOT: /src/public
+#    links:
+#      - db
+#  db:
+#    image: darmats/mysql:5.7-utf8mb4
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#      MYSQL_DATABASE: sandbox
+#      TZ: UTC
+#    volumes:
+#      - db-data:/var/lib/mysql
+#volumes:
+#  db-data:

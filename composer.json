@@ -1,0 +1,19 @@
+{
+    "name": "darmats/php-github-actions-sandbox",
+    "require": {
+        "php": "^7.3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Darmats\\GitHubActions\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Darmats\\GitHubActions\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    }
+}
