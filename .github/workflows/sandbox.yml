@@ -1,0 +1,22 @@
+name: Sandbox
+
+on: [push]
+
+jobs:
+  sandbox:
+    runs-on: ubuntu-latest
+    steps:
+    - name: github.repository 1
+      run: echo ${{ github.repository }}
+    - name: github.repository 2
+      run: echo $REPOSITORY_NAME
+      env:
+        REPOSITORY_NAME: ${{ github.repository }}
+    - name: Echo actor
+      run: echo $GITHUB_ACTOR
+    - name: Be executed task
+      if: github.repository == 'darmats/php-github-actions-sandbox'
+      run: echo Be executed
+    - name: Not executed task
+      if: github.repository == 'darmats/dummy'
+      run: echo Not executed
