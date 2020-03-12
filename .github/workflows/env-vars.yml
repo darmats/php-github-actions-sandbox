@@ -1,9 +1,6 @@
 name: Env vars
 
-on:
-  push:
-    branches:
-      - env/*
+on: [push]
 
 jobs:
   echo-env-vars:
